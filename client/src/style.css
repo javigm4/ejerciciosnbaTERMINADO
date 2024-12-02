@@ -1,0 +1,119 @@
+html,
+body {
+  margin: 0; /* Elimina los márgenes por defecto */
+  padding: 0; /* Elimina los rellenos por defecto */
+  height: 100%; /* Asegúrate de que ocupen todo el viewport */
+  width: 100%;
+}
+
+body {
+  font-family: "Roboto", sans-serif; /* Utiliza la fuente Roboto */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+span {
+  color: black;
+  margin-right: 3px;
+}
+
+.container {
+  margin: 10;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.87);
+  display: flex;
+  height: 100%;
+  width: 80%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.continer-filter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+.container-card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  height: 80%;
+  width: 100%;
+}
+
+.styled-select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 40%;
+  padding: 10px 35px 10px 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: white;
+  cursor: pointer;
+  outline: none;
+  transition:
+    border-color 0.3s,
+    box-shadow 0.3s;
+}
+
+.styled-select:hover {
+  border-color: #888;
+}
+
+.styled-select:focus {
+  border-color: #0066cc;
+  box-shadow: 0 0 0 2px rgba(0, 102, 204, 0.2);
+}
+
+.styled-select-arrow {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid #666;
+  pointer-events: none;
+}
+
+.styled-select:focus + .styled-select-arrow {
+  border-top-color: #0066cc;
+}
+
+.card {
+  width: 400px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  background-color: white;
+}
+
+.card-content {
+  padding: 16px;
+}
+
+.card-title {
+  margin: 0 0 8px;
+  font-size: 1.25rem;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.card-description {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #666;
+}

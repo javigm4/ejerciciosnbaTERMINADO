@@ -1,0 +1,8 @@
+{
+  "sources": [
+    { "name": "all" },
+    { "name": "nba" },
+    { "name": "espn" },
+    { "name": "slam" }
+  ]
+}
